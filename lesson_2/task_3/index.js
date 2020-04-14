@@ -1,5 +1,5 @@
 const goodNumber = 17;
-const anotherNumber = goodNumber;
+let anotherNumber = goodNumber;
 anotherNumber = 77;
 
 console.log(goodNumber);
