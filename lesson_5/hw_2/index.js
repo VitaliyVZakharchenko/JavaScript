@@ -1,6 +1,6 @@
 "use strict";
 
-const isNatural = function (n) {
+const getPrimes = function (n) {
   let count = 2;
   for (let i = count; i <= n; i++) {
     for (let j = 1; j <= i; j++) {
@@ -10,4 +10,4 @@ const isNatural = function (n) {
 }
 }
 
-isNatural(30);
+// getPrimes(30);
