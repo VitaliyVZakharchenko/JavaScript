@@ -1,10 +1,15 @@
 "use strict";
 
 const getPrimes = function (n) {
-    for (let i = 2; i <= n; i++) {
-    for (let j = 2; j < i; j++) {
-      if (i % j === 0) continue;
+    for (let i = 1; i <= n; i++) {
+        let count = 0;
+    for (let j = 1; j <= i; j++) {
+      if (i % j) {continue;}
+      count += 1;
+
     }
+    if (count === 2)
     console.log(i);
 }
 }
+getPrimes(15);
