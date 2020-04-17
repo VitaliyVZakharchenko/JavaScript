@@ -1,14 +1,20 @@
 "use strict";
 
+const Prime = function (m) {
+  for (let i = 2; i < m; i += 1) {
+    if (m % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
 const getPrimes = function (n) {
-    let count = '';
-  nextPrime: for (let i = 2; i <= n; i++) {
-    for (let j = 2; j < i; j++) {
-      if (i % j == 0) continue nextPrime;
+  for (let i = 2; i <= n; i += 1) {
+    if (Prime(i)) {
+      console.log(i);
     }
-    count += i;
-    }
-  console.log(count);
+  }
 }
 
 getPrimes(10);
