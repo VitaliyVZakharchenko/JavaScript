@@ -1,7 +1,7 @@
 "use strict";
 
 const Prime = function (m) {
-  for (let i = 2; i < m; i += 1) {
+  for (let i = 2; i < m; i++) {
     if (m % i === 0) {
       return false;
     }
@@ -10,11 +10,9 @@ const Prime = function (m) {
 }
 
 const getPrimes = function (n) {
-  for (let i = 2; i <= n; i += 1) {
+  for (let i = 2; i <= n; i++) {
     if (Prime(i)) {
       console.log(i);
     }
   }
 }
-
-getPrimes(10);
