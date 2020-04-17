@@ -1,20 +1,19 @@
 'use strisct'
 
-
-
-
-
-
-const sum = function (from, to) { /*сума чисел*/
-    let sum = 0;
-    for (let i = 1; i <= n; i++) {
-        sum = sum += i;
-    }
-}
-
-
 const compareSums = function (a, b, c, d) {
-    if (sum1(a, b) > sum2(c, d)) {
-        return 
-    }
+    if (sum(a, b) > sum(c, d)) {
+        return true;
+    } else {
+            return false;
+        }
 }
+
+const sum = function (from, to) {
+    let sum = 0;
+    for (let i = from; i <= to; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+console.log(compareSums(1, 2, 1, 3));
