@@ -1,19 +1,10 @@
-'use strisct'
+'use strict'
 
-const compareSums = function (a, b, c, d) {
-    if (sum(a, b) > sum(c, d)) {
-        return true;
-    } else {
-            return false;
-        }
-}
-
-const sum = function (from, to) {
-    let sum = 0;
-    for (let i = from; i <= to; i++) {
-        sum += i;
+const increaser = function (a, index) {
+    if (a > index) {
+        a += index;
     }
-    return sum;
+    return a;
 }
 
-console.log(compareSums(1, 2, 1, 3));
+console.log(increaser(5, 10));
