@@ -4,7 +4,7 @@ const findDivCount = function (a, b, n) {
     let result = 0;
     for (let i = a; i <= b; i++) {
         if (i % n === 0) {
-            result += i;
+            result ++;
         }
     }
     return result;
