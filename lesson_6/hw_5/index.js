@@ -8,9 +8,11 @@ const reverseArray = function (arr) {
       }
 
     for (let i = 1; i <= arr.length; i++) {
-        result.push(arr[arr.length - i]);
+        result.push(arr[arr.length - [i]]);
     }
     return result;
 }
 
 console.log(reverseArray([1, 2, 3, 4, 5]));
+
+
