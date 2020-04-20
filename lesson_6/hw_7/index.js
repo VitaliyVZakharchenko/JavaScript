@@ -1,8 +1,12 @@
 'use strict'
 
-const checker = function(arr) {
+const checker = function (arr) {
     const max = arr[0];
     const min = arr[0];
+
+    if (!Array.isArray(arr)) {
+        return null;
+      }
 
     for (let i = 0; i < arr.length; i += 1) {
         
