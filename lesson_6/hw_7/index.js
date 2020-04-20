@@ -10,10 +10,10 @@ const checker = function (arr) {
 
     for (let i = 0; i < arr.length; i += 1) {
         
-        if (arr[i] >= max) {
+        if (max < arr[i]) {
             max = arr[i];
         }
-        else (arr[i] <= min) { 
+        else (min > arr[i]) { 
             min = arr[i];
         }
         
