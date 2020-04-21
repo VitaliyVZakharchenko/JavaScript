@@ -1,7 +1,7 @@
 'use strict'
 
 const reverseArray = arr =>
-    !Array.isArray(arr) ? null : arr.reverse();
+    !Array.isArray(arr) ? null : arr.slice().reverse();
     
 const array = [1, 2, 3, 4, 5];
 
