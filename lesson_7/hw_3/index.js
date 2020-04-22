@@ -2,7 +2,7 @@
 
 const increaseEvenEl = (arr, delta) =>
     !Array.isArray(arr) ? null : 
-    arr.filter(arr => arr % 2 === 0).map(num => num + delta);
+    arr.map(num => num % 2 === 0 ? num + delta : num);
 
 const numbers = [1, 2, 3, 4, 5, 6];
 
