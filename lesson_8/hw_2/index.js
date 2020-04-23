@@ -9,7 +9,7 @@ const user = {
   const anotherKey = 'married';
   /* название свойства хранится в переменной anotherKey.
   Присвойте объекту такое свойство со значением false */
-  user['married'] = 'false';
+  user[anotherKey] = 'false';
   
   /* присвойте объекту свойство 'favorite music' со значением 'rock' */
   user['favorite music'] = 'rock';
