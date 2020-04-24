@@ -9,11 +9,11 @@ const objC = {
 const getAdults = (obj) => {
     let result = {};
     for (let prop in obj) {
-        if ( obj[prop] >= 18 ) {
+        if ( obj[prop] > 18 ) {
             result[prop] = obj[prop];
         }
-    return result;
     }
+    return result;
 };
 
 const result = getAdults(objC);
