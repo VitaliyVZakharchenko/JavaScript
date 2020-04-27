@@ -17,20 +17,11 @@ const rooms = {
     ],
 };
 
-const getPeople = obj => 
-        
+const getPeople = obj =>
     Object.values(obj)
-
-    // console.log(Object.values(obj));
-    
-
     .reduce((acc, currentValue) => acc
-        .concat(currentValue), [])
+    .concat(currentValue), [])
     .reduce((acc, currentValue) => acc
-        // .concat(currentValue['name']), []);
-
-    // return obj;
-    // return Object.entries(obj);    
-
+    .concat(currentValue['name']), []);
 
 console.log(getPeople(rooms));
