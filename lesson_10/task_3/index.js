@@ -2,7 +2,7 @@
 
 const number = 4.548431846;
 
-const multiRoud = num => [
+const multiRound = num => [
     Math.floor(num * 100) / 100,
     Math.round(num * 100) /100,
     Math.ceil(num * 100) / 100,
@@ -11,4 +11,4 @@ const multiRoud = num => [
     // +num.toFixed(2),
 ];
 
-console.log(multiRoud(number));
+console.log(multiRound(number));
