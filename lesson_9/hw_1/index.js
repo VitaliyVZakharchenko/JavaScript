@@ -13,7 +13,7 @@ const customers = {
 
 const getCustomersList = obj =>        
         Object.entries(obj)
-        .map((id, customer) => ({id, ...customer}))
+        .map(([id, customer]) => ({id, ...customer}))
         .sort((a, b) => a.age < b.age);
         
 
