@@ -12,7 +12,7 @@ const getRandomNumbers = (leng, min, max) => {
     // }
 
     for (let i = 0; i < leng; i += 1) {
-        arr[i] = Math.floor((Math.random() * (max + 1) + min));
+        arr[i] = Math.floor(((Math.random() * (max)) + min));
     };
 
     return arr;
