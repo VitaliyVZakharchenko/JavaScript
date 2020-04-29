@@ -6,13 +6,9 @@ const getRandomNumbers = (leng, min, max) => {
     };
 
     let arr = [];
-        
-    // for (let i = 0; i < leng; i += 1) {
-    //     arr[i] = Math.floor((Math.random() * (max - min) + 1) + min);
-    // }
-
+      
     for (let i = 0; i < leng; i += 1) {
-        arr[i] = Math.floor(Math.random() * (max - min)) + min;
+        arr[i] = Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1)) + Math.ceil(min);
     };
 
     return arr;
