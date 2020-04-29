@@ -1,14 +1,11 @@
 'use strict'
 
-const number = 4.548431846;
+const number = [-777, 3, 4.548, -5.24546, -1, 45, -20];
 
-const multiRound = num => [
-    Math.floor(num * 100) / 100,
-    Math.round(num * 100) /100,
-    Math.ceil(num * 100) / 100,
-    Math.trunc(num * 100) / 100,
-    Number(num.toFixed(2)),
-    // +num.toFixed(2),
-];
+const getMaxAbsoluteNumber = arr =>
+    !Array.isArray(arr) && arr.length === 0 ? null :
+    Math.max(...arr.map(currentValue =>
+        Math.abs(currentValue)));
+    
 
-console.log(multiRound(number));
+console.log(getMaxAbsoluteNumber(number));
