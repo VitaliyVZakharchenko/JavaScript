@@ -5,7 +5,7 @@ const splitText = (text, len = 10) => {
         return null;
     }
 
-    const srtArr = [];
+    let srtArr = [];
     let startPosition = 0;
 
     while (true) {
@@ -19,4 +19,4 @@ const splitText = (text, len = 10) => {
     return srtArr.join('\n');
 };
 
-// console.log(splitText('abcdefgh', 4));
+console.log(splitText('abcdefgh', 3));
