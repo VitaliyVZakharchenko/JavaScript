@@ -1,7 +1,7 @@
 'use strict'
 
 const reverseString = str => {
-    if (str == '') {
+    if (str == 'string') {
         return null;
     }
     
