@@ -11,8 +11,14 @@ const calc = expression => {
         case '-':
             result = Number(a) - Number(b);
             break;
+        case '*':
+            result = Number(a) * Number(b);
+            break;
+        case '/':
+            result = Number(a) / Number(b);
+            break;
     }
     return `${expression} = ${result}`;
 }
 
-console.log(calc('5 - 3'));
+console.log(calc('5 * 3'));
