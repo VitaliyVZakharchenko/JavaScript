@@ -4,18 +4,18 @@ const transaction = {
     value: 170,
 }
 
-const addPropertyV1 = (obj, key, value) => {
+export const addPropertyV1 = (obj, key, value) => {
     obj[key] = value;
     return obj;
 };
 
-const addPropertyV2 = (obj, key, value) => {
+export const addPropertyV2 = (obj, key, value) => {
     Object.assign(obj[key] = value);
     return obj;
 };
 
 
-const addPropertyV3 = (obj, key, value) => {
+export const addPropertyV3 = (obj, key, value) => {
     let newObj = {};
 
     Object.assign(newObj, obj);
@@ -23,9 +23,9 @@ const addPropertyV3 = (obj, key, value) => {
     return newObj;
 };
 
-const addPropertyV4 = (obj, key, value) => 
+export const addPropertyV4 = (obj, key, value) => 
     ({...obj, [key]: value});
     // result = {...obj, [key]: value}
     // return result;
     
-console.log(addPropertyV4(transaction, 'currency', 'USD'));
+// console.log(addPropertyV4(transaction, 'currency', 'USD'));

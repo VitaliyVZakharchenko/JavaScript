@@ -1,6 +1,6 @@
 'use strisct'
 
-const compareSums = function (a, b, c, d) {
+export const compareSums = function (a, b, c, d) {
     if (sum(a, b) > sum(c, d)) {
         return true;
     } else {
@@ -16,4 +16,4 @@ const sum = function (from, to) {
     return sum;
 }
 
-console.log(compareSums(1, 2, 1, 3));
+// console.log(compareSums(1, 2, 1, 3));
