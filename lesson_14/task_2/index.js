@@ -1,9 +1,11 @@
 'use strict';
-    
+
+let sender = 'Gromcode';
+let message = 'Just learn it';
+
+
 const createMessenger = () => {
-    let sender = 'Gromcode';
-    let message = 'Just learn it';
-    
+        
     function sendMessage(name) {
 
         console.log(`${name}, ${message}! Your ${sender}`);
@@ -27,13 +29,13 @@ export default createMessenger;
 const messenger = createMessenger();
 messenger.sendMessage('Bob');
 
-const newMessage1 = 'Good job';
+message = 'Good job';
 const messenger1 = createMessenger();
-messenger1.setMessage(newMessage1.bold());
+messenger1.setMessage(message.bold());
 messenger1.sendMessage('Bob');
 
 
-const newMessage2 = 'Gromcode';
+message = 'Gromcode';
 const messenger2 = createMessenger();
-messenger2.setSender(newMessage2.bold());
+messenger2.setSender(message.bold());
 messenger2.sendMessage('Bob');
