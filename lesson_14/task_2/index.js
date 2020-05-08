@@ -27,12 +27,10 @@ export default createMesseger;
 const messenger = createMesseger();
 messenger.sendMessage('Bob');
 
-
-messenger.setMessage('Good job');
+const newMessage = 'Good job';
+messenger.setMessage(newMessage.bold());
 messenger.sendMessage('Bob');
 
-
-const newMessage = 'Gromcode';
+const newMessage1 = 'Gromcode';
+messenger.setSender(newMessage1.bold());
 messenger.sendMessage('Bob');
-
-messenger.setSender(newMessage.bold());
