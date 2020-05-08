@@ -1,5 +1,4 @@
-const memory = 0;
-
+let memory = 0;
 
 export const add = num => memory += num;
 export const decrease = num => memory -= num;
