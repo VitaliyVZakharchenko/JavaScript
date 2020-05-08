@@ -31,10 +31,11 @@ const newMessage = 'Good job';
 const bodNewMessage = newMessage.bold();
 const messenger1 = createMessenger();
 messenger1.setMessage(bodNewMessage);
-messenger1.sendMessage('Bob');
+// messenger1.sendMessage('Bob');
+
 
 
 const newMessage1 = 'Gromcode';
 const messenger2 = createMessenger();
 messenger2.setSender(newMessage1.bold());
-messenger2.sendMessage('Bob');
+// messenger2.sendMessage('Bob');
