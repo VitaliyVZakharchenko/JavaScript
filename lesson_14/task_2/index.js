@@ -22,7 +22,7 @@ const createMessenger = () => {
     };
 };
 
-// export default createMessenger;
+export default createMessenger;
 
 const messenger = createMessenger();
 messenger.sendMessage('Bob');
