@@ -22,7 +22,7 @@ const createMessenger = () => {
     };
 };
 
-export default createMessenger;
+// export default createMessenger;
 
 const messenger = createMessenger();
 messenger.sendMessage('Bob');
@@ -30,7 +30,6 @@ messenger.sendMessage('Bob');
 const newMessage = 'Good job';
 const bodNewMessage = newMessage.bold();
 const messenger1 = createMessenger();
-
 messenger1.setMessage(bodNewMessage);
 messenger1.sendMessage('Bob');
 
