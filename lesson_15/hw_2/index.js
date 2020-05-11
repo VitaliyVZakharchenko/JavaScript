@@ -43,9 +43,9 @@ const crateLogger = () => {
   return logger;
 };
 
-// export default crateLogger;
+export default crateLogger;
 
-const logger = crateLogger();
+// const logger = crateLogger();
 // logger.log('Log in');
 
-console.log(logger.getRecords());
+// console.log(logger.getRecords());
