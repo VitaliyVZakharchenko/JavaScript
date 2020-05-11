@@ -1,6 +1,6 @@
 "use strict";
 
-const createLogger = () => {
+export const createLogger = () => {
   let memory = [];
 
   let warn = (text) =>
@@ -45,7 +45,7 @@ const createLogger = () => {
   return logger;
 };
 
-export default createLogger;
+// export default createLogger;
 
 // const logger = createLogger();
 // logger.log('User logged in');
