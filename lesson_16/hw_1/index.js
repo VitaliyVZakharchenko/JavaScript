@@ -1,6 +1,6 @@
 "use strict";
 
-const createArrayOfFunctions = (num) => {
+export const createArrayOfFunctions = (num) => {
   let arr = [];
 
   !Number.isNaN(num) || typeof num === undefined ? null : arr;
@@ -10,6 +10,6 @@ const createArrayOfFunctions = (num) => {
       return i;
     };
   }
-  
+
   return arr;
 };
