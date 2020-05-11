@@ -1,6 +1,6 @@
 'use strict'
 
-const crateLogger = () => {
+export const crateLogger = () => {
     let memory = [];
 
     const warn = (text) => {memory.push({ message: text, dateTime: new Date(), type: 'warn' })};
