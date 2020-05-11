@@ -1,6 +1,6 @@
 "use strict";
 
-const crateLogger = () => {
+const createLogger = () => {
   let memory = [];
 
   let warn = (text) =>
@@ -43,9 +43,9 @@ const crateLogger = () => {
   return logger;
 };
 
-export default crateLogger;
+export default createLogger;
 
-// const logger = crateLogger();
+// const logger = createLogger();
 // logger.log('Log in');
 
 // console.log(logger.getRecords());
