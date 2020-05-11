@@ -1,6 +1,6 @@
 "use strict";
 
-export default function createLogger () {
+export const createLogger = () => {
   let memory = [];
 
   let warn = (text) =>
