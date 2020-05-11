@@ -3,11 +3,11 @@
 export const crateLogger = () => {
     let memory = [];
 
-    const warn = (text) => {memory.push({ message: text, dateTime: new Date(), type: 'warn' })};
+    const warn = (text) => memory.push({ message: text, dateTime: new Date(), type: 'warn' });
 
-    const error = (text) => {memory.push({ message: text, dateTime: new Date(), type: 'error' })};
+    const error = (text) => memory.push({ message: text, dateTime: new Date(), type: 'error' });
 
-    const log = (text) => {memory.push({ message: text, dateTime: new Date(), type: 'log' })};
+    const log = (text) => memory.push({ message: text, dateTime: new Date(), type: 'log' });
 
     const getRecord = (text) => {
         switch (text) {
