@@ -33,19 +33,25 @@ const createLogger = () => {
         return memory.sort((a, b) => b.dateTime - a.dateTime);
     }
   };
+
   let logger = {
     warn,
     error,
     log,
-    getRecords,
     memory,
+    getRecords,
   };
+
   return logger;
 };
 
 export default createLogger;
 
 // const logger = createLogger();
-// logger.log('Log in');
+// logger.log('User logged in');
+// logger.warn('Iser try to restricted page');
+// logger.log('User logged out');
+// logger.error('Unexpected error on the site')
+// // logger.getRecords();
 
-// console.log(logger.getRecords());
+// console.log(logger.getRecords('warn'));
