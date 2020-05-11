@@ -3,6 +3,14 @@
 const crateLogger = () => {
     let memory = [];
 
+    let logger = {
+        warn,
+        error,
+        log,
+        getRecords,
+        memory,
+    }
+
     let warn = (text) => memory.push({ message: text, dateTime: new Date(), type: 'warn' });
 
     let error = (text) => memory.push({ message: text, dateTime: new Date(), type: 'error' });
@@ -24,17 +32,12 @@ const crateLogger = () => {
                 return memory.sort((a, b) => b.dateTime - a.dateTime);
     }   
 }
-    return {
-        warn,
-        error,
-        log,
-        getRecords,
-    };
+    return logger;
 };
 
-export default crateLogger;
+// export default crateLogger;
 
-// const logger = crateLogger();
+const logger = crateLogger();
 // logger.log('Log in');
 
-// console.log(logger.getRecords());
+console.log(logger.getRecords());
