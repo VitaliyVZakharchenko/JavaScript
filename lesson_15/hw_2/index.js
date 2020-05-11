@@ -9,7 +9,7 @@ export const crateLogger = () => {
 
     const log = (text) => memory.push({ message: text, dateTime: new Date(), type: 'log' });
 
-    const getRecord = (text) => {
+    const getRecords = (text) => {
         switch (text) {
             case 'warn':
                 return memory.filter(obj => obj.type === 'warn').sort((a, b) => b.dateTime - a.dateTime);
@@ -28,11 +28,11 @@ export const crateLogger = () => {
         warn,
         error,
         log,
-        getRecord,
+        getRecords,
     }
 };
 
 const logger = crateLogger();
 logger.log('');
 
-console.log(logger.getRecord());
+console.log(logger.getRecords());
