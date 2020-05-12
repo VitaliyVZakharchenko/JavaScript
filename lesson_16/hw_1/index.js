@@ -1,10 +1,12 @@
 "use strict";
 
-export const createArrayOfFunctions = (num) => {
+// export
+const createArrayOfFunctions = (num) => {
   let arr = [];
+  
+  if (num == undefined) return arr;
   if (!Number.isInteger(num)) return null;
-  if (num === undefined) return arr;
-
+  
   for (let i = 0; i < num; i++) {
     arr[i] = function () {
       return i;
@@ -14,4 +16,4 @@ export const createArrayOfFunctions = (num) => {
   return arr;
 };
 
-console.log(createArrayOfFunctions(2));
+console.log(createArrayOfFunctions());
