@@ -1,7 +1,6 @@
 "use strict";
 
-// export
-const createArrayOfFunctions = (num) => {
+export const createArrayOfFunctions = (num) => {
   let arr = [];
   
   if (num == undefined) return arr;
