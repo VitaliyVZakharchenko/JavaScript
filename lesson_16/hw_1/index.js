@@ -1,6 +1,6 @@
 "use strict";
 
-const createArrayOfFunctions = (num) => {
+export const createArrayOfFunctions = (num) => {
   let arr = [];
   if (!Number.isInteger(num)) return null;
   if (typeof(num) === "undefined") return arr;
