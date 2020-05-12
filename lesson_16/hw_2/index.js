@@ -8,5 +8,5 @@ function bar() {
     return foo;
 }
 
-export var foo = bar();
-console.log(foo);
+export default foo = bar();
+// console.log(foo);
