@@ -1,6 +1,6 @@
 var foo = 1; 
 
-export function bar() { 
+function bar() { 
     if (!foo) { 
         const foo = 10; 
     } 
@@ -8,5 +8,5 @@ export function bar() {
     return foo;
 }
 
-var foo = bar();
+export var foo = bar();
 console.log(foo);
