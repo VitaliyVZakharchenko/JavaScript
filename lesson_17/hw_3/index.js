@@ -11,19 +11,16 @@ function sayName() {
  * создайте ф-цию sayStudentName которая будет выводить в консоль имя студента 'Tom'
  * используйте .bind и ф-цию sayName
  */
-function sayStudentName() {
-    const say = sayName.bind(student);
-    console.log(say);
-}
+export const sayStudentName = sayName.bind(student);
+sayStudentName();
 
 
 /*
  * создайте ф-цию sayBruceName которая будет выводить в консоль имя 'Bruce'
  * используйте ф-цию sayName и .bind с нужным объектом
  */
-function sayBruceName() {
-    console.log(sayName.bind({ name: 'Bruce' }));
-}
+export const sayBruceName = sayName.bind({ name: 'Bruce' });
+sayBruceName();
 
 
 /* ===> 2 <=== */
@@ -41,10 +38,8 @@ function greeting(firstName, lastName) {
  * используйте ф-цию greeting и .bind с нужным объектом и аргументами
  * specialGreeting не должна принимать ни одного аргумента
  */
-function specialGreeting(params) {
-    console.log(greeting.bind(company, 'Bob', 'Marley'));
-    
-}
+export const specialGreeting = greeting.bind(company, 'Bob', 'Marley');
+specialGreeting();
 
 
 
@@ -66,14 +61,10 @@ function getPopulation(population) {
  * используйте ф-цию getPopulation и .bind с нужным объектом и аргументами
  * getUkrainePopulation не должна принимать ни одного аргумента
  */
-// export const getUkrainePopulation = getPopulation.bind(country, 43000);
-// console.log(getUkrainePopulation());
+export const getUkrainePopulation = getPopulation.bind(country, 43000);
+console.log(getUkrainePopulation());
 
 
-function getUkrainePopulation() {
-    return getPopulation.bind(country, 43000);
-}
-// console.log(getUkrainePopulation());
 
 
 /* ===> 4 <=== */
@@ -100,9 +91,5 @@ const anotherTransaction = {
  * используйте метод transaction.printTransaction и .bind с нужным объектом
  * printSpecialTransaction не должна принимать ни одного аргумента
  */
-
- function printSpecialTransaction() {
-    return transaction.bind(anotherTransaction);
- };
-
-//  console.log(printSpecialTransaction);
+export const printSpecialTransaction = transaction.printTransaction.bind(anotherTransaction);
+printSpecialTransaction();
