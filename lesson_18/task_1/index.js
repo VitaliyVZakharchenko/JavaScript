@@ -6,7 +6,7 @@ export const event = {
         { name: 'Bob', email: 'b@gmail.com', age: 18 }
     ],
     message: 'Welcome to the party!',
-    getInvintations() {
+    getInvitations() {
         return this.guests
             .filter(({ age }) => age >= 18)
             .map(({ name, email }) => ({
@@ -16,4 +16,4 @@ export const event = {
     }
 };
 
-console.log(event.getInvintations());
+console.log(event.getInvitations());
