@@ -6,8 +6,8 @@ export const user = {
     },
 
     setFullName(fullName) {
-        this.firstName = fullName.slice(' ')[0];
-        this.lastName = fullName.slice(' ')[1];
+        this.firstName = fullName.split(' ')[0];
+        this.lastName = fullName.split(' ')[1];
     }
 }
 
