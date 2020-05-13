@@ -2,6 +2,6 @@
 
 export function sumOfSquares() {
     return [...arguments].reduce((acc, el) => {
-        return acc + (el * 2);
+        return acc + (el * el);
     }, 0);
 }
