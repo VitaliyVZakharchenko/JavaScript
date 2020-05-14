@@ -1,11 +1,11 @@
 export function saveCalls(func) {
-    // const calls = [];
+    const calls = [];
 
     function withMemory(...arguments) {
-      withMemory.calls.push(arguments);
+      calls.push(arguments);
       return func.apply(this, arguments);
     };
 
-    withMemory.calls = [];
+    withMemory.calls = calls;
     return withMemory;
   };
