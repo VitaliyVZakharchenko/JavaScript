@@ -1,6 +1,6 @@
 'use strict';
 
-export default const user = {
+const user = {
     firstName: 'Jonh',
     lastName: 'Doe',
     get fullName() {
@@ -12,3 +12,5 @@ export default const user = {
         this.lastName = lastName;
     }
 }
+
+export default user;
