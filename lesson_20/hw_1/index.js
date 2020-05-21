@@ -5,8 +5,8 @@ export class Order {
         this.id = String(Math.random());
         this.price = price;
         this.dateCreated = new Date();
-        this.isConfirmed;
-        this.dateConfirmed;
+        this.isConfirmed = false;
+        this.dateConfirmed = new Date();
         this.city = city;
         this.type = type;
     }
