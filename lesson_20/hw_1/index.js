@@ -11,7 +11,7 @@ export class Order {
         this.type = type;
     }
 
-    checkPrice(price) {
+    checkPrice() {
         // if (this.price > 1000) {
         //     return true;
         // } else {
