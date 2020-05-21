@@ -12,12 +12,12 @@ export class Order {
     }
 
     checkPrice(price) {
-        // if (price > 1000) {
+        // if (this.price > 1000) {
         //     return true;
         // } else {
         //     return false;
         // }
-        return price > 1000;
+        return this.price > 1000;
     }
 
     confirmOrder() {
