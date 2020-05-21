@@ -4,7 +4,7 @@ export class Order {
     constructor(price, city, type) {
         this.id = String(Math.random());
         this.price = price;
-        this.dateCreated;
+        this.dateCreated = new Date();
         this.isConfirmed;
         this.dateConfirmed;
         this.city = city;
