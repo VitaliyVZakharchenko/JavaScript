@@ -20,7 +20,7 @@ class Order {
         return price > 1000;
     }
 
-    checkOrder() {
+    confirmOrder() {
         this.isConfirmed = true;
         this.dateConfirmed = new Date();
     }
