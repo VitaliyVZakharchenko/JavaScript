@@ -1,3 +1,5 @@
+'use strict';
+
 export class Vehicle {
     constructor(name, numberOfWheels) {
         this.name = name;
@@ -21,11 +23,11 @@ export class Ship extends Vehicle {
 
     move() {
         console.log(`${this.name} lifting anchor up`);
-        this.move();
+        super.move();
     }
 
-    stopMachine() {
-        this.stop();
+    stop() {
+        super.stop();
         console.log(`${this.name} lifting anchor down`);
     }
 };
