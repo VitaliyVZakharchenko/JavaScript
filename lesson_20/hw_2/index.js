@@ -34,7 +34,7 @@ export class UserRepository {
     }
 
     getUserIds() {
-        return this.users.map(item => item._id)
+        return this.users.map(item => item._id);
     }
 
     getUserNameById(id) {
