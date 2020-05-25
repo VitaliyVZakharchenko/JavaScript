@@ -24,10 +24,10 @@ export function getGoal() {
     return goal.outerHTML;
 }
 
-console.log(getTitle());
+// console.log(getTitle());
 
-console.log(getDescription());
+// console.log(getDescription());
 
-console.log(getPlans());
+// console.log(getPlans());
 
-console.log(getGoal());
+// console.log(getGoal());
