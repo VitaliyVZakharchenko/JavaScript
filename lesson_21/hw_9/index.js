@@ -1,6 +1,6 @@
 'use strict';
 
-const finishForm = () => {
+export const finishForm = () => {
     const formEl = document.querySelector('.login-form');
     
     const newInput = document.createElement('input');
