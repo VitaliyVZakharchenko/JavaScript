@@ -22,4 +22,4 @@ export const finishList = () => {
     listEl.append(el8);
 }
 
-finishList();
+// finishList();
