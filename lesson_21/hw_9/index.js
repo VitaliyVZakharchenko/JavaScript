@@ -14,4 +14,4 @@ export const finishForm = () => {
     formEl.append(newInput);
 }
 
-finishForm();
+// finishForm();
