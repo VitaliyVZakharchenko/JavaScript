@@ -7,4 +7,4 @@ export const squaredNumbers = () => {
         });
 }
 
-// squaredNumbers();
+squaredNumbers();
