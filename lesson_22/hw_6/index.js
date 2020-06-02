@@ -4,7 +4,7 @@ const btnEl = document.querySelector('.btn');
 const btnEl1 = document.querySelector('.btn').nextElementSibling;
 
 
-const handleClick = () => {
+const handleClick = (event) => {
     console.log(event.target.textContent);
 }
 
