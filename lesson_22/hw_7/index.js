@@ -6,4 +6,4 @@ const logTarget = (event) => {
     console.log(event.target.value);
 }
 
-inputElem.addEventListener('input', logTarget);
+inputElem.addEventListener('change', logTarget);
