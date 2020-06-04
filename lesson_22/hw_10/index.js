@@ -42,6 +42,7 @@ renderTasks(tasks);
 
 listElem.addEventListener('click', updateTask);
 
+
 function updateTask(event) {
     const classes = event.target.classList;
 
@@ -49,7 +50,11 @@ function updateTask(event) {
 
     const task = tasks.find(task => task.id === event.target.dataset.taskId);
     
-    task.done = event.target.checked;  
+    task.done = event.target.checked;
+    
+    // task.done === true ? task.done = false : task.done = true;
+
+    
 
     renderTasks(tasks);
 }
@@ -69,7 +74,6 @@ function createTask() {
         done: false,
         id: `${tasks.length + 1}`,
         // id: Math.random().toString(),
-
     }
     
     input.value = '';
