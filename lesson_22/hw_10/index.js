@@ -9,7 +9,6 @@ const tasks = [
 ];
 
 
-
 const listElem = document.querySelector('.list');
 
 const renderTasks = (tasksList) => {
@@ -42,20 +41,15 @@ renderTasks(tasks);
 
 listElem.addEventListener('click', updateTask);
 
-
 function updateTask(event) {
     const classes = event.target.classList;
 
     if (!classes.contains('list__item-checkbox')) return;
 
-    const task = tasks.find(task => task.id === event.target.dataset.taskId);
+    const task = tasks.find(task => task.id === event.target.dataset.id);
     
     task.done = event.target.checked;
     
-    // task.done === true ? task.done = false : task.done = true;
-
-    
-
     renderTasks(tasks);
 }
 
@@ -66,15 +60,16 @@ createBtn.addEventListener('click', createTask);
 
 function createTask() {
     const input = document.querySelector('.task-input');
-    const inputVal = input.value;
-    if (!inputVal) return;
+    const inputValue = input.value;
+    if (!inputValue) return;
+    console.log(inputValue);
 
-    tasks.push = {
-        text: input.value,
+    tasks.push ({
+        // text: text,
+        text: inputValue,
         done: false,
         id: `${tasks.length + 1}`,
-        // id: Math.random().toString(),
-    }
+    });
     
     input.value = '';
    
