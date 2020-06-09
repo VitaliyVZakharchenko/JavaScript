@@ -1,11 +1,11 @@
 'use strict';
 
 const tasks = [
-    { text: 'Buy milk', done: false, id: '1', date: new Date(), doneDate: new Date() },
-    { text: 'Pick up Tom from airport', done: false, id: '2', date: new Date(), doneDate: new Date() },
-    { text: 'Visit party', done: false, id: '3', date: new Date(), doneDate: new Date() },
-    { text: 'Visit doctor', done: true, id: '4', date: new Date(), doneDate: new Date() },
-    { text: 'Buy meat', done: true, id: '5', date: new Date(), doneDate: new Date() },
+    { text: 'Buy milk', done: false, id: '1', date: new Date(), doneDate: null },
+    { text: 'Pick up Tom from airport', done: false, id: '2', date: new Date(), doneDate: null },
+    { text: 'Visit party', done: false, id: '3', date: new Date(), doneDate: null },
+    { text: 'Visit doctor', done: true, id: '4', date: new Date(), doneDate: null },
+    { text: 'Buy meat', done: true, id: '5', date: new Date(), doneDate: null },
 ];
 
 
@@ -17,7 +17,7 @@ const sortDoneDate = (a, b) => {
     }
     
     if (a.done) {
-        return new Date(b.doneDate) - new Date(a.doneDate);
+        return new Date(a.doneDate) - new Date(b.doneDate);
     }
     
     return new Date(b.date) - new Date(a.date);
@@ -82,7 +82,7 @@ function createTask() {
         done: false,
         id: `${tasks.length + 1}`,
         date: new Date(),
-        doneDate: new Date()
+        doneDate: null
     });
     
     input.value = '';
