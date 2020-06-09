@@ -17,7 +17,7 @@ const sortDoneDate = (a, b) => {
     }
     
     if (a.done) {
-        return new Date(b.doneDate) - new Date(a.doneDate);
+        return (b.doneDate) - (a.doneDate);
     }
     
     return new Date(b.date) - new Date(a.date);
@@ -81,6 +81,8 @@ function createTask() {
         text: inputValue,
         done: false,
         id: `${tasks.length + 1}`,
+        date: new Date(),
+        doneDate: new Date()
     });
     
     input.value = '';
