@@ -17,7 +17,7 @@ const sortDoneDate = (a, b) => {
     }
     
     if (a.done) {
-        return (b.doneDate) - (a.doneDate);
+        return new Date(b.doneDate) - new Date(a.doneDate);
     }
     
     return new Date(b.date) - new Date(a.date);
