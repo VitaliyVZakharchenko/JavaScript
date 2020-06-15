@@ -1,6 +1,6 @@
 'use strict';
 
-const shmoment = initValue => {
+export const shmoment = initValue => {
     let result = {
         years: initValue.getFullYear(),
         months: initValue.getMonth(),
