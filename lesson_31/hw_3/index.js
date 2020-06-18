@@ -1,11 +1,12 @@
 export const delay = time => {
-    const pr = new Promise((resolve) => {
+    const prom = new Promise((resolve) => {
       setTimeout(() => {
         resolve(time)
     }, time)
-  })
-  return pr
-  }
+    });
+
+  return prom;
+};
   
-  delay(3000)
-  .then(() => console.log('Done'));
+delay(3000)
+.then(() => console.log('Done'));
