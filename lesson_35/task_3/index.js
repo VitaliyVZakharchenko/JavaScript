@@ -30,8 +30,6 @@ const onSearchUser = () => {
         })
         .catch(() => {
             alert(err.message);
-        })
-        .finally(() => {
             hideSpinner();
         })
 };
