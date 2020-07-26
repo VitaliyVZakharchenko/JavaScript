@@ -28,10 +28,10 @@ const onSearchUser = () => {
             renderRepos(reposList);
             hideSpinner();
         })
-        .catch(() => {
-            alert(err.message);
+        .catch(err => {
             hideSpinner();
-        })
+            alert(err.message);
+        });
 };
 
 showUserBtnElem.addEventListener('click', onSearchUser);
